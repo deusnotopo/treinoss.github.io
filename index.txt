@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seu Plano Simples para Ganhar Saúde e Massa!</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 400px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 300px;
+            max-height: 400px;
+        }
+        @media (min-width: 768px) {
+            .chart-container {
+                height: 350px;
+            }
+        }
+        .bg-custom-gray {
+            background-color: #F8F9FA;
+        }
+        .text-custom-blue-darkest {
+            color: #006494;
+        }
+        .text-custom-blue-dark {
+            color: #0582CA;
+        }
+        .text-custom-yellow {
+            color: #F7B801;
+        }
+        .bg-custom-blue {
+            background-color: #00A6FB;
+        }
+        .border-custom-blue-dark {
+            border-color: #0582CA;
+        }
+    </style>
+</head>
+<body class="bg-custom-gray">
+
+    <main class="container mx-auto p-4 md:p-8">
+
+        <header class="text-center mb-12">
+            <h1 class="text-4xl md:text-5xl font-black text-custom-blue-darkest mb-2">Seu Plano Simples para Ganhar Saúde e Massa!</h1>
+            <p class="text-lg text-gray-600">Um guia fácil para você se sentir mais forte e com mais energia.</p>
+        </header>
+
+        <section id="profile" class="mb-12">
+            <h2 class="text-3xl font-bold text-center text-custom-blue-darkest mb-8">1. Seu Ponto de Partida (Onde Você Está)</h2>
+            <p class="text-center text-gray-600 mb-6">Vamos entender de onde você está começando:</p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+                <div class="bg-white rounded-lg shadow-md p-6">
+                    <p class="text-5xl font-bold text-custom-blue-dark">1,78<span class="text-2xl">m</span></p>
+                    <p class="text-gray-500 mt-2">Sua Altura</p>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-6">
+                    <p class="text-5xl font-bold text-custom-blue-dark">66<span class="text-2xl">kg</span></p>
+                    <p class="text-gray-500 mt-2">Seu Peso Atual</p>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-6">
+                    <p class="text-4xl font-bold text-custom-blue-dark">32<span class="text-2xl"> anos</span></p>
+                    <p class="text-gray-500 mt-2">Sua Idade</p>
+                </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-md p-6 mt-6 max-w-2xl mx-auto text-center">
+                <p class="text-lg text-gray-700 mb-2">Seu corpo é um <strong class="text-custom-blue-darkest">"ectomorfo"</strong>:</p>
+                <p class="text-gray-600">Você queima energia rápido e ganha músculo fácil, mas também perde peso fácil. Por isso, precisa comer bem e na hora certa!</p>
+                <p class="text-lg font-semibold text-custom-blue-dark mt-4">Seu objetivo: Ganhar saúde, peso e muita energia!</p>
+            </div>
+        </section>
+
+        <section id="what-to-eat" class="mb-12">
+            <h2 class="text-3xl font-bold text-center text-custom-blue-darkest mb-8">2. O Que Comer (Sua Meta de Energia)</h2>
+            <p class="text-center text-gray-600 mb-6">Para ganhar saúde e massa, você precisa de energia! Sua meta é comer cerca de:</p>
+            <div class="bg-white rounded-lg shadow-xl p-8 text-center max-w-md mx-auto mb-8">
+                <p class="text-lg font-semibold text-gray-600">Calorias por Dia</p>
+                <p class="text-6xl font-black text-custom-blue-darkest">~2.800 <span class="text-3xl">kcal</span></p>
+                <p class="text-md text-gray-500 mt-2">Isso é o que você precisa para ganhar peso de forma saudável.</p>
+            </div>
+
+            <p class="text-center text-gray-600 mb-6">Para atingir essa meta, a regra é simples: <strong class="text-custom-blue-darkest">Coma a cada 2-3 horas!</strong></p>
+            <div class="bg-white rounded-lg shadow-md p-8">
+                <div class="flex flex-col md:flex-row justify-between items-center text-center space-y-4 md:space-y-0 md:space-x-2">
+                    <div class="p-3 rounded-lg border-2 border-custom-blue-dark flex-1">☕ Café da Manhã</div>
+                    <div class="text-custom-blue-dark font-bold text-2xl">&#10140;</div>
+                    <div class="p-3 rounded-lg border-2 border-custom-blue-dark flex-1">🍽️ Almoço</div>
+                    <div class="text-custom-blue-dark font-bold text-2xl">&#10140;</div>
+                    <div class="p-3 rounded-lg border-2 border-custom-blue-dark flex-1">🍎 Lanche da Tarde</div>
+                    <div class="text-custom-blue-dark font-bold text-2xl">&#10140;</div>
+                    <div class="p-3 rounded-lg border-2 border-custom-blue-dark flex-1">🍜 Jantar</div>
+                    <div class="text-custom-blue-dark font-bold text-2xl">&#10140;</div>
+                    <div class="p-3 rounded-lg border-2 border-custom-blue-dark flex-1">🥛 Ceia</div>
+                </div>
+                <p class="text-center text-gray-600 mt-6">Inclua 2 shakes de hipercalórico e 3 refeições principais.</p>
+            </div>
+        </section>
+
+        <section id="daily-meals" class="mb-12">
+            <h2 class="text-3xl font-bold text-center text-custom-blue-darkest mb-8">3. Suas Refeições Diárias (O Que Comer em Cada Hora)</h2>
+            <p class="text-center text-gray-600 mb-6">Aqui está um exemplo de como organizar suas refeições ao longo do dia para atingir suas metas:</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="bg-white rounded-lg shadow-md p-6">
+                    <h3 class="text-xl font-bold text-custom-blue-dark mb-3">🕗 Café da Manhã (05h30)</h3>
+                    <ul class="list-disc list-inside text-gray-600 space-y-1">
+                        <li>1 porção de hipercalórico (shake)</li>
+                        <li>2 ovos cozidos (~100g)</li>
+                        <li>1 colher de azeite extra virgem (~10g)</li>
+                    </ul>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-6">
+                    <h3 class="text-xl font-bold text-custom-blue-dark mb-3">🍽️ Almoço (11h30)</h3>
+                    <ul class="list-disc list-inside text-gray-600 space-y-1">
+                        <li>4 colheres de arroz ou macarrão (~120g cozido)</li>
+                        <li>100 g de carne ou frango (cozido)</li>
+                        <li>Feijão ou lentilha (~80g cozido)</li>
+                        <li>Salada com azeite (~10g azeite) + 1 fruta (maçã ou banana ~100g)</li>
+                    </ul>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-6">
+                    <h3 class="text-xl font-bold text-custom-blue-dark mb-3">🕓 Lanche da Tarde (14h30)</h3>
+                    <ul class="list-disc list-inside text-gray-600 space-y-1">
+                        <li>1 porção de hipercalórico (shake)</li>
+                        <li>1 punhado de castanhas ou amendoim (~30g)</li>
+                    </ul>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-6">
+                    <h3 class="text-xl font-bold text-custom-blue-dark mb-3">🌙 Jantar (18h30)</h3>
+                    <ul class="list-disc list-inside text-gray-600 space-y-1">
+                        <li>Purê de batata doce ou arroz (~150g cozido)</li>
+                        <li>Ovo cozido ou omelete (~100g)</li>
+                        <li>Verdura refogada (~100g) + azeite (~10g)</li>
+                        <li>1 fatia de abacate com limão (~50g)</li>
+                    </ul>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-6 md:col-span-2">
+                    <h3 class="text-xl font-bold text-custom-blue-dark mb-3">🌌 Ceia (21h30)</h3>
+                    <ul class="list-disc list-inside text-gray-600 space-y-1">
+                        <li>1 copo de leite morno (~200ml) com cacau + mel (~10g cacau, ~15g mel)</li>
+                        <li>1 colher de pasta de amendoim (~15g)</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="key-foods" class="mb-12">
+            <h2 class="text-3xl font-bold text-center text-custom-blue-darkest mb-8">4. Alimentos Chave e Seu Shake Poderoso</h2>
+            <p class="text-center text-gray-600 mb-6">Estes alimentos vão te dar a energia e os nutrientes que você precisa:</p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+                <div class="bg-white rounded-lg shadow-md p-6 text-center">
+                    <h3 class="text-xl font-bold text-custom-blue-dark mb-3">🍗 Proteínas (Para o Músculo)</h3>
+                    <ul class="list-none text-gray-600 space-y-1">
+                        <li>Frango, Carne, Peixe</li>
+                        <li>Ovos, Leite, Queijos</li>
+                    </ul>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-6 text-center">
+                    <h3 class="text-xl font-bold text-custom-blue-dark mb-3">🍠 Carboidratos (Para a Energia)</h3>
+                     <ul class="list-none text-gray-600 space-y-1">
+                        <li>Arroz, Batata, Aveia</li>
+                        <li>Banana, Pão, Macarrão</li>
+                    </ul>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-6 text-center">
+                    <h3 class="text-xl font-bold text-custom-blue-dark mb-3">🥑 Gorduras Boas (Para a Saúde)</h3>
+                     <ul class="list-none text-gray-600 space-y-1">
+                        <li>Abacate, Pasta de Amendoim</li>
+                        <li>Nozes, Castanhas, Azeite</li>
+                    </ul>
+                </div>
+            </div>
+
+            <h3 class="text-2xl font-bold text-center text-custom-blue-darkest mb-6">Sua Receita Secreta: O Shake Hipercalórico (1 porção)</h3>
+            <div class="bg-white rounded-lg shadow-md p-6 max-w-2xl mx-auto">
+                <p class="text-lg text-gray-700 mb-4">Misture tudo no liquidificador até ficar homogêneo:</p>
+                <ul class="list-disc list-inside text-gray-600 space-y-2 mb-6">
+                    <li>🍌 1 banana madura (~110g)</li>
+                    <li>🥣 3 colheres de sopa de aveia (~30g)</li>
+                    <li>🥛 200 ml de leite líquido integral (~200g)</li>
+                    <li>🥜 1 colher de sopa de pasta de amendoim (~15g)</li>
+                    <li>🍯 1 colher de mel ou rapadura ralada (~20g)</li>
+                    <li>🍫 1 colher de sopa de cacau em pó (100%) (~10g)</li>
+                    <li>💧 1 colher de chá de óleo de coco ou azeite (~5g)</li>
+                    <li>🌱 1 colher de sobremesa de linhaça ou chia (~5g)</li>
+                    <li>🧊 300 ml de água gelada (~300g)</li>
+                    <li>(Opcional) 💪 ½ scoop de whey ou colágeno (~15g)</li>
+                </ul>
+                <p class="text-lg font-semibold text-custom-blue-dark text-center">Tome 2 shakes por dia: no café da manhã e no lanche da tarde.</p>
+            </div>
+        </section>
+
+        <section id="what-to-buy" class="mb-12">
+            <h2 class="text-3xl font-bold text-center text-custom-blue-darkest mb-8">5. O Que Comprar (Sua Lista do Mês)</h2>
+            <p class="text-center text-gray-600 mb-6">Para fazer seus shakes e refeições em casa por 1 mês, você vai precisar de:</p>
+            <div class="bg-white rounded-lg shadow-md p-6 max-w-xl mx-auto">
+                <h3 class="text-xl font-bold text-custom-blue-dark mb-4">Ingredientes do Shake Hipercalórico:</h3>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-gray-700 mb-6">
+                    <p>✅ Aveia em flocos: 4,5 kg</p>
+                    <p>✅ Leite líquido integral: 12 Litros</p>
+                    <p>✅ Pasta de amendoim: 3 kg</p>
+                    <p>✅ Banana madura: 60 unidades</p>
+                    <p>✅ Mel ou rapadura: 2 kg</p>
+                    <p>✅ Cacau em pó 100%: 600 g</p>
+                    <p>✅ Linhaça ou chia: 1 kg</p>
+                    <p>✅ Óleo de coco ou azeite: 500 ml</p>
+                    <p>✅ Água potável: 20 L (para bater)</p>
+                    <p class="col-span-1 sm:col-span-2">✅ (Opcional) Whey ou Colágeno: 1 kg</p>
+                </div>
+
+                <h3 class="text-xl font-bold text-custom-blue-dark mb-4">Ingredientes para as Refeições Diárias:</h3>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-gray-700">
+                    <p>✅ Ovos: ~5 dúzias (60 unidades)</p>
+                    <p>✅ Azeite extra virgem: ~1 Litro (para cozinhar e salada)</p>
+                    <p>✅ Arroz ou macarrão: ~8 kg</p>
+                    <p>✅ Carne ou frango: ~3 kg</p>
+                    <p>✅ Feijão ou lentilha: ~2,5 kg</p>
+                    <p>✅ Maçãs ou Bananas (para almoço): ~4 kg</p>
+                    <p>✅ Castanhas ou amendoim: ~1 kg</p>
+                    <p>✅ Batata doce: ~4,5 kg</p>
+                    <p>✅ Verduras (brócolis, cenoura, etc.): ~3 kg</p>
+                    <p>✅ Abacate: ~1,5 kg (5-6 unidades grandes)</p>
+                    <p>✅ Leite integral (para ceia): ~6 Litros</p>
+                </div>
+
+                <div class="text-center mt-6">
+                    <p class="text-lg font-semibold text-custom-blue-dark">Custo estimado por mês:</p>
+                    <p class="text-3xl font-bold text-custom-blue-darkest">R$ 420 a R$ 550</p>
+                    <p class="text-md text-gray-500">(Com whey ou colágeno: até R$ 700)</p>
+                    <p class="text-sm text-gray-600 mt-2">Muito mais barato e nutritivo do que comprar pronto!</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="training-routine" class="mb-12">
+            <h2 class="text-3xl font-bold text-center text-custom-blue-darkest mb-8">6. Sua Rotina de Treinos (Movimente-se com Inteligência!)</h2>
+            <p class="text-center text-gray-600 mb-6">Seu trabalho com azulejo já te ajuda a se movimentar! Mas para ganhar mais massa e força, algumas dicas e um exemplo de treino:</p>
+            <div class="bg-white rounded-lg shadow-md p-6 max-w-xl mx-auto mb-8">
+                <ul class="list-none space-y-4 text-gray-700">
+                    <li class="flex items-start">
+                        <span class="text-custom-blue-dark text-2xl mr-3">🏋️‍♂️</span>
+                        <div>
+                            <strong class="font-bold">Foco na Força:</strong> Se for treinar na academia, foque em exercícios com pesos (musculação).
+                            Tente 3 a 4 vezes por semana, com treinos de até 45 minutos.
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-custom-blue-dark text-2xl mr-3">🏃‍♂️</span>
+                        <div>
+                            <strong class="font-bold">Aeróbico com Moderação:</strong> Caminhada ou corrida leve, no máximo 2 a 3 vezes por semana, por uns 30 minutos. Não exagere para não queimar as calorias que você precisa para ganhar massa!
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-custom-blue-dark text-2xl mr-3">🛌</span>
+                        <div>
+                            <strong class="font-bold">Descanso é Essencial:</strong> Seus músculos crescem quando você descansa. Durma bem (7-8 horas por noite) e dê um dia de folga para cada grupo muscular treinado.
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-custom-blue-dark text-2xl mr-3">🤝</span>
+                        <div>
+                            <strong class="font-bold">Ajuda Profissional:</strong> Se puder, converse com um profissional de educação física. Ele pode montar um treino perfeito para você.
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <h3 class="text-2xl font-bold text-center text-custom-blue-darkest mb-6">Exemplo de Treino de Força (3x por Semana)</h3>
+            <p class="text-center text-gray-600 mb-6">Faça este treino em dias alternados (ex: segunda, quarta, sexta) para dar tempo de descanso aos músculos.</p>
+            <div class="bg-white rounded-lg shadow-md p-6 max-w-2xl mx-auto mb-8">
+                <div class="mb-6">
+                    <h4 class="text-xl font-bold text-custom-blue-dark mb-2">Aquecimento (5-10 minutos)</h4>
+                    <ul class="list-disc list-inside text-gray-600 space-y-1">
+                        <li>Caminhada leve ou bicicleta ergométrica.</li>
+                        <li>Alongamentos dinâmicos (braços, pernas, tronco).</li>
+                    </ul>
+                </div>
+                <div class="mb-6">
+                    <h4 class="text-xl font-bold text-custom-blue-dark mb-2">Treino Principal (30-40 minutos)</h4>
+                    <ul class="list-disc list-inside text-gray-600 space-y-2">
+                        <li><strong>Agachamento Livre ou no Smith:</strong> 3 séries de 8-12 repetições (com peso que te desafie, mas que consiga fazer com boa forma).</li>
+                        <li><strong>Supino com Halteres ou Barra:</strong> 3 séries de 8-12 repetições.</li>
+                        <li><strong>Remada Curvada com Barra ou Halteres:</strong> 3 séries de 8-12 repetições.</li>
+                        <li><strong>Desenvolvimento com Halteres (Ombros):</strong> 3 séries de 10-15 repetições.</li>
+                        <li><strong>Rosca Direta (Bíceps):</strong> 3 séries de 10-15 repetições.</li>
+                        <li><strong>Tríceps na Polia ou Testa:</strong> 3 séries de 10-15 repetições.</li>
+                    </ul>
+                    <p class="text-sm text-gray-500 mt-4">Descanse 60-90 segundos entre as séries.</p>
+                </div>
+                <div>
+                    <h4 class="text-xl font-bold text-custom-blue-dark mb-2">Alongamento Final (5 minutos)</h4>
+                    <ul class="list-disc list-inside text-gray-600 space-y-1">
+                        <li>Alongue os principais grupos musculares trabalhados.</li>
+                    </ul>
+                </div>
+                <p class="text-center text-sm text-gray-500 mt-6">Lembre-se de começar com pesos leves para aprender a técnica e aumentar gradualmente. A forma correta é mais importante que a carga!</p>
+            </div>
+
+            <h3 class="text-2xl font-bold text-center text-custom-blue-darkest mb-6 mt-12">Treino para Fazer em Casa (Semana sem Academia)</h3>
+            <p class="text-center text-gray-600 mb-6">Faça este treino 3 vezes por semana (ex: terça, quinta, sábado). Foque na boa forma!</p>
+            <div class="bg-white rounded-lg shadow-md p-6 max-w-2xl mx-auto">
+                <div class="mb-6">
+                    <h4 class="text-xl font-bold text-custom-blue-dark mb-2">Aquecimento (5 minutos)</h4>
+                    <ul class="list-disc list-inside text-gray-600 space-y-1">
+                        <li>Polichinelos (30 segundos)</li>
+                        <li>Rotação de braços (para frente e para trás, 30 segundos cada)</li>
+                    </ul>
+                </div>
+                <div class="mb-6">
+                    <h4 class="text-xl font-bold text-custom-blue-dark mb-2">Treino Principal (20-30 minutos)</h4>
+                    <ul class="list-disc list-inside text-gray-600 space-y-2">
+                        <li><strong>Agachamento Livre:</strong> 3 séries de 10-15 repetições.</li>
+                        <li><strong>Flexão de Braço (no chão ou com joelhos apoiados):</strong> 3 séries até a falha (quantas conseguir fazer com boa forma).</li>
+                        <li><strong>Prancha (abdômen):</strong> 3 séries, segurando por 30-60 segundos.</li>
+                        <li><strong>Afundo (cada perna):</strong> 3 séries de 10-12 repetições.</li>
+                        <li><strong>Elevação de Panturrilha:</strong> 3 séries de 15-20 repetições.</li>
+                    </ul>
+                    <p class="text-sm text-gray-500 mt-4">Descanse 45-60 segundos entre as séries.</p>
+                </div>
+                <div>
+                    <h4 class="text-xl font-bold text-custom-blue-dark mb-2">Alongamento Final (5 minutos)</h4>
+                    <ul class="list-disc list-inside text-gray-600 space-y-1">
+                        <li>Alongue as pernas, braços e costas.</li>
+                    </ul>
+                </div>
+                <p class="text-center text-sm text-gray-500 mt-6">Aproveite para se movimentar e manter o corpo ativo, mesmo em casa!</p>
+            </div>
+        </section>
+
+        <section id="what-to-do" class="mb-12">
+            <h2 class="text-3xl font-bold text-center text-custom-blue-darkest mb-8">7. O Que Fazer (Dicas Simples para o Dia a Dia)</h2>
+            <p class="text-center text-gray-600 mb-6">Para ter os melhores resultados e se sentir melhor, lembre-se:</p>
+            <div class="bg-white rounded-lg shadow-md p-6 max-w-xl mx-auto">
+                <ul class="list-none space-y-4 text-gray-700">
+                    <li class="flex items-start">
+                        <span class="text-custom-blue-dark text-2xl mr-3">💧</span>
+                        <div>
+                            <strong class="font-bold">Beba bastante água:</strong> Pelo menos 2,5 litros por dia. É super importante para a saúde e para o corpo funcionar bem.
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-custom-blue-dark text-2xl mr-3">😴</span>
+                        <div>
+                            <strong class="font-bold">Descanse bem:</strong> O músculo cresce enquanto você dorme. Tente ter 7-8 horas de sono de qualidade.
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-custom-blue-dark text-2xl mr-3">👷‍♂️</span>
+                        <div>
+                            <strong class="font-bold">Seu trabalho já ajuda:</strong> O trabalho com azulejo já é uma atividade física leve. Mantenha-se ativo!
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-custom-blue-dark text-2xl mr-3">🔄</span>
+                        <div>
+                            <strong class="font-bold">Se sentir estufado:</strong> Se as doses do shake forem muito grandes, divida em 3 doses menores ao longo do dia.
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-custom-blue-dark text-2xl mr-3">🗓️</span>
+                        <div>
+                            <strong class="font-bold">Seja consistente:</strong> Comer bem todos os dias é o segredo para ganhar saúde e massa. Não desista!
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+    </main>
+    
+    <footer class="text-center p-6 mt-8">
+        <p class="text-sm text-gray-500">Este é um guia inicial. Sempre converse com um médico ou nutricionista para um plano mais detalhado e específico para você.</p>
+    </footer>
+
+    <script>
+        const tooltipTitleCallback = (tooltipItems) => {
+            const item = tooltipItems[0];
+            let label = item.chart.data.labels[item.dataIndex];
+            if (Array.isArray(label)) {
+                return label.join(' ');
+            }
+            return label;
+        };
+
+        const commonChartOptions = {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+                legend: {
+                    position: 'bottom',
+                    labels: {
+                        font: {
+                            family: 'Inter',
+                        }
+                    }
+                },
+                tooltip: {
+                    callbacks: {
+                        title: tooltipTitleCallback
+                    }
+                }
+            }
+        };
+
+        const macroCtx = document.getElementById('macroChart');
+        if (macroCtx) {
+            new Chart(macroCtx.getContext('2d'), {
+                type: 'doughnut',
+                data: {
+                    labels: ['Proteínas', 'Carboidratos', 'Gorduras'],
+                    datasets: [{
+                        label: 'Distribuição de Macronutrientes',
+                        data: [21.5, 43, 35.5],
+                        backgroundColor: [
+                            '#00A6FB',
+                            '#F7B801',
+                            '#0582CA'
+                        ],
+                        borderColor: '#F8F9FA',
+                        borderWidth: 4
+                    }]
+                },
+                options: {
+                    ...commonChartOptions,
+                    cutout: '70%',
+                }
+            });
+        }
+
+        const trainingCtx = document.getElementById('trainingChart');
+        if (trainingCtx) {
+            new Chart(trainingCtx.getContext('2d'), {
+                type: 'bar',
+                data: {
+                    labels: ['Frequência Semanal (dias)', 'Duração por Sessão (min)'],
+                    datasets: [{
+                        label: 'Treino de Força',
+                        data: [4, 45],
+                        backgroundColor: '#0582CA',
+                        borderColor: '#006494',
+                        borderWidth: 1
+                    }, {
+                        label: 'Aeróbico',
+                        data: [3, 30],
+                        backgroundColor: '#F4D35E',
+                        borderColor: '#F7B801',
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    ...commonChartOptions,
+                    indexAxis: 'y',
+                    scales: {
+                        x: {
+                            beginAtZero: true,
+                            grid: {
+                                display: false
+                            }
+                        },
+                        y: {
+                            grid: {
+                                display: false
+                            }
+                        }
+                    }
+                }
+            });
+        }
+    </script>
+</body>
+</html>
